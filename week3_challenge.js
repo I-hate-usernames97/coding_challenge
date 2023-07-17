@@ -1,1 +1,12 @@
+function LongestWord(sen) {
+  let arr = sen.match(/[a-z]+/gi);
 
+  let sorted = arr.sort(function(a, b) {
+    return b.length - a.length;
+  });
+
+  return sorted[0];
+
+}
+
+LongestWord(readline());
